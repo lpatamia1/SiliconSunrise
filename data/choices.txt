@@ -1,0 +1,9 @@
+#1
+Choice: Sit by Hermione.
+Result: #2
+#1
+Choice: Sit by Ron.
+Result: #3
+#1
+Choice: Sit by yourself.
+Result: #4

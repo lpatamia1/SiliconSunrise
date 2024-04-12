@@ -1,0 +1,8 @@
+#1
+Welcome to Hogwarts, the school of witchcraft and wizardry! You will now begin your journey by taking the Hogwart's Express to campus. You must choose who to sit next to.
+#2
+You choose to sit next to Hermione which increases your intellect points. Her smart wit will help you in future puzzles.
+#3
+You choose to sit with Ron who will become your loyal friend. He makes certain challenges easier with his help.
+#4
+You choose to sit along and meet Neville. He becomes your loyal friend and adds unique support later in the game.
