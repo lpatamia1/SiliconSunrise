@@ -1,4 +1,5 @@
 #include "character.h"
+#include <stdio.h>
 
 void gameLoop(HogwartsStudent *student) {
     int choice;

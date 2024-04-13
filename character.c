@@ -4,7 +4,7 @@ typedef struct {
     int intelligence;
     int courage;
     int charisma;
-    int spellcasting;
+    int spellCasting;
     int potionMaking;
     int flying;
 } HogwartsStudent;
