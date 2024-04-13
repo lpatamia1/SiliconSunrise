@@ -1,31 +1,53 @@
 # Choice 1: Arrival at Hogwarts
 Choice: Sit by Hermione.
-Result: Increases intellect; leads to scene 2.
+Outcome: Increases intellect; leads to Scene 2.
+Impact: {intellect: +1}
 Choice: Sit by Ron.
-Result: Increases bravery; leads to scene 3.
-Choice: Sit by yourself.
-Result: Increases loyalty; leads to scene 4.
+Outcome: Increases bravery; leads to Scene 3.
+Impact: {bravery: +1}
+Choice: Sit by yourself and meet Neville.
+Outcome: Increases loyalty; leads to Scene 4.
+Impact: {loyalty: +1}
 
 # Choice 2: Respond to Malfoy's taunt
 Choice: Confront Malfoy.
-Result: Increases bravery; leads to scene 5.
+Outcome: Increases bravery; leads to Scene 5.
+Impact: {bravery: +2, risk: detention}
 Choice: Ignore and focus on lesson.
-Result: Increases intellect; leads to scene 6.
+Outcome: Increases intellect; leads to Scene 6.
+Impact: {intellect: +1}
 
 # Choice 3: Facing the Halloween Troll
 Choice: Go directly to warn Hermione.
-Result: Requires bravery; leads to scene 7.
+Outcome: Requires bravery; leads to Scene 7.
+Impact: {bravery: +2, risk: injury}
 Choice: Inform a teacher.
-Result: Increases wisdom; leads to scene 8.
+Outcome: Increases wisdom; leads to Scene 8.
+Impact: {wisdom: +1}
 
 # Choice 4: Investigating the Forbidden Corridor
 Choice: Sneak into the Corridor.
-Result: Risks detention but discovers clues; leads to scene 9.
+Outcome: Risks detention but discovers clues; leads to Scene 9.
+Impact: {bravery: +1, risk: detention}
 Choice: Stay away.
-Result: Avoids trouble, increases wisdom; leads to scene 10.
+Outcome: Avoids trouble, increases wisdom; leads to Scene 10.
+Impact: {wisdom: +1}
 
 # Choice 5: Dealing with Quirrell
 Choice: Use magical knowledge.
-Result: Tests all skills learned; leads to scene 11.
+Outcome: Tests all skills learned; leads to Scene 11.
+Impact: {intellect: +2, bravery: +1}
 Choice: Try to reason.
-Result: Tests empathy and understanding; leads to scene 12.
+Outcome: Tests empathy and understanding; leads to Scene 12.
+Impact: {wisdom: +1, empathy: +1}
+
+# Choice 6: The Ending - The House Cup
+Choice: Reflect on bravery.
+Outcome: Embracing courage, you pledge to face future challenges head-on, influencing your adventures with daring choices.
+Impact: {bravery: +3}
+Choice: Reflect on intellect.
+Outcome: Valuing knowledge, you aim to approach future challenges with strategic thinking and insightful solutions.
+Impact: {intellect: +3}
+Choice: Reflect on loyalty.
+Outcome: Prioritizing relationships, you focus on strengthening bonds and building alliances that will support you in future endeavors.
+Impact: {loyalty: +3}
