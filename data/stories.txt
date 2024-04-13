@@ -1,8 +1,35 @@
-#1
-Welcome to Hogwarts, the school of witchcraft and wizardry! You are new to magic after discovering your magical heritage. You will now begin your journey by taking the Hogwart's Express to campus after purchasing your school supplies at Diagon Alley. You must choose who to sit next to on the train.
-#2
-You choose to sit next to Hermione which increases your intellect points. Her smart wit will help you in future puzzles.
-#3
-You choose to sit with Ron who will become your loyal friend. He makes certain challenges easier with his help.
-#4
-You choose to sit along and meet Neville. He becomes your loyal friend and adds unique support later in the game.
+# Scene 1: Arrival at Hogwarts
+Background: You arrive at Hogwarts and board the Hogwarts Express. Who will you sit next to?
+
+# Scene 2: Hermione's Help
+Outcome: You gain insight into magical theory, helping with future puzzles.
+
+# Scene 3: Ron's Friendship
+Outcome: Ron becomes a dependable ally, aiding in future challenges.
+
+# Scene 4: Neville's Growth
+Outcome: Neville's loyalty provides unique support in later adventures.
+
+# Scene 5: Duel with Malfoy
+Outcome: Your courage impresses others, but you risk detention.
+
+# Scene 6: Focusing on Flying
+Outcome: You improve your flying skills, earning respect from Madam Hooch.
+
+# Scene 7: Saving Hermione
+Outcome: Your bravery saves Hermione, earning her gratitude and loyalty.
+
+# Scene 8: Teacher's Aid
+Outcome: You gain respect from the faculty for your prudence.
+
+# Scene 9: Discovering Fluffy
+Outcome: You uncover crucial clues about the Philosopher's Stone but risk getting caught.
+
+# Scene 10: Staying Out of Trouble
+Outcome: You focus on your studies, missing direct clues but improving your knowledge.
+
+# Scene 11: Confronting Quirrell
+Outcome: A showdown that could save or doom Hogwarts depending on your preparedness.
+
+# Scene 12: Reasoning with Quirrell
+Outcome: A tense negotiation that could lead to peace or escalate the threat.

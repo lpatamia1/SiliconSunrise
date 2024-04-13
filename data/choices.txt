@@ -1,9 +1,31 @@
-#1
+# Choice 1: Arrival at Hogwarts
 Choice: Sit by Hermione.
-Result: #2
-#1
+Result: Increases intellect; leads to scene 2.
 Choice: Sit by Ron.
-Result: #3
-#1
+Result: Increases bravery; leads to scene 3.
 Choice: Sit by yourself.
-Result: #4
+Result: Increases loyalty; leads to scene 4.
+
+# Choice 2: Respond to Malfoy's taunt
+Choice: Confront Malfoy.
+Result: Increases bravery; leads to scene 5.
+Choice: Ignore and focus on lesson.
+Result: Increases intellect; leads to scene 6.
+
+# Choice 3: Facing the Halloween Troll
+Choice: Go directly to warn Hermione.
+Result: Requires bravery; leads to scene 7.
+Choice: Inform a teacher.
+Result: Increases wisdom; leads to scene 8.
+
+# Choice 4: Investigating the Forbidden Corridor
+Choice: Sneak into the Corridor.
+Result: Risks detention but discovers clues; leads to scene 9.
+Choice: Stay away.
+Result: Avoids trouble, increases wisdom; leads to scene 10.
+
+# Choice 5: Dealing with Quirrell
+Choice: Use magical knowledge.
+Result: Tests all skills learned; leads to scene 11.
+Choice: Try to reason.
+Result: Tests empathy and understanding; leads to scene 12.
