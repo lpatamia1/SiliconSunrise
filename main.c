@@ -1,9 +1,10 @@
 #include <stdio.h>
-
-//main game loop
+#include "character.h"
 
 int main() {
-    printf("Hello, World!\n");
+    printf("Welcome to Hogwarts: The Adventure Begins!\n");
+    HogwartsStudent player = createStudent();  // Function to initialize character stats
+    gameLoop(&player);  // Main game loop to handle game progression
     return 0;
 }
 
