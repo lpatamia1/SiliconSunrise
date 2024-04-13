@@ -1,4 +1,6 @@
 #include "character.h"
+#include "game_logic.h"
+
 #include <stdio.h>
 
 void gameLoop(HogwartsStudent *student) {

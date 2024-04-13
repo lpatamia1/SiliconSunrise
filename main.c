@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "character.h"
+#include "src/character.h"
 
 int main() {
     printf("Welcome to Hogwarts: The Adventure Begins!\n");
