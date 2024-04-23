@@ -1,30 +1,51 @@
-#include "character.h"
 #include "game_logic.h"
-
 #include <stdio.h>
+#include <stdlib.h>
 
-void gameLoop(HogwartsStudent *student) {
+void push(NodeStack *stack, Node *node) {
+    if (stack->top < 99) {
+        stack->items[++stack->top] = node;
+    } else {
+        fprintf(stderr, "Stack Overflow\n");
+        exit(EXIT_FAILURE);
+    }
+}
+
+Node* pop(NodeStack *stack) {
+    if (stack->top >= 0) {
+        return stack->items[stack->top--];
+    } else {
+        fprintf(stderr,"Stack Underflow\n");
+        exit(EXIT_FAILURE);
+    }
+}
+
+void playGame(Node *startNode, Attributes *player) {
+    NodeStack gameStack = {.top = -1};
+    push(&gameStack, startNode);
+
+    Node *currentNode;
     int choice;
-    while (1) {  // Simple loop for demonstration, replace with actual game end conditions
-        printf("Choose an action:\n1. Explore the castle\n2. Study in the library\n3. Visit Hagrid\nEnter choice: ");
+
+    while ((currentNode = pop(&gameStack)) != NULL) {
+        printf("%s\n", currentNode->description);
+        for (int i = 0; i < 3 && currentNode->choices[i].text[0] != '\0'; ++i) {
+            printf("%d. %s\n", i + 1, currentNode->choices[i].text);
+        }
+
+        printf("\nEnter your choice: ");
         scanf("%d", &choice);
-        handleDecision(choice, student);
-        if (choice == 0) break;  // Assume 0 is quit for simplicity
+        --choice;
+
+        if (choice >= 0 && choice < 3 && currentNode->choices[choice].next) {
+            if (currentNode->choices[choice].next) {
+                push(&gameStack, currentNode->choices[choice].next);
+            }
+        } else {
+            printf("Invalid choice. Please try again.\n");
+        }
     }
+
+    printf("The game has ended. Reflect on your journey!\n");
 }
 
-void handleDecision(int choice, HogwartsStudent *student) {
-    switch (choice) {
-        case 1:
-            exploreCastle(student);
-            break;
-        case 2:
-            studyInLibrary(student);
-            break;
-        case 3:
-            visitHagrid(student);
-            break;
-        default:
-            printf("Invalid choice. Please try again.\n");
-    }
-}

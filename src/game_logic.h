@@ -3,18 +3,23 @@
 
 #include "character.h"
 
-typedef struct {
-    char background[1024];
-    int numChoices;
-    struct {
-        char description[256];
-        char outcome[256];
+typedef struct Node {
+    char description[1024];
+    struct Choice {
+        char text[256];
+        struct Node* next;
         Attributes impact;
-        int nextSceneIndex;
     } choices[3];
-} Scene;
+} Node;
 
-int loadScenes(const char* filename);
-void playGame();
+typedef struct {
+    Node* items[100];
+    int top;
+} NodeStack;
+
+void playGame(Node *startNode, Attributes *player);
+Node* setupGame();
+void push(NodeStack *stack, Node *node);
+Node* pop(NodeStack *stack);
 
 #endif
