@@ -3,17 +3,6 @@
 
 #include "character.h"
 
-typedef struct {
-    char background[1024];
-    int numChoices;
-    struct {
-        char description[256];
-        char outcome[256];
-        Attributes impact;
-        int nextSceneIndex;
-    } choices[3];
-} Scene;
-
 typedef struct Node {
     char description[1024];
     struct Choice {
@@ -29,7 +18,11 @@ typedef struct {
     int top;
 } NodeStack;
 
+// Function Prototypes
 void playGame(Node *startNode);
+void push(NodeStack *stack, Node *node);
+Node* pop(NodeStack *stack);
+Node* setupGame();
 int loadScenes(const char* filename);
 
 #endif
