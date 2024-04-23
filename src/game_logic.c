@@ -1,30 +1,32 @@
 #include "character.h"
-#include "game_logic.h"
-
 #include <stdio.h>
 
-void gameLoop(HogwartsStudent *student) {
-    int choice;
-    while (1) {  // Simple loop for demonstration, replace with actual game end conditions
-        printf("Choose an action:\n1. Explore the castle\n2. Study in the library\n3. Visit Hagrid\nEnter choice: ");
-        scanf("%d", &choice);
-        handleDecision(choice, student);
-        if (choice == 0) break;  // Assume 0 is quit for simplicity
-    }
-}
+void playGame(Node *startNode) {
+    NodeStack gameStack;
+    gameStack.top = -1;  // initializing stack
+    push(&gameStack, startNode);  // starting the game with the initial node
 
-void handleDecision(int choice, HogwartsStudent *student) {
-    switch (choice) {
-        case 1:
-            exploreCastle(student);
-            break;
-        case 2:
-            studyInLibrary(student);
-            break;
-        case 3:
-            visitHagrid(student);
-            break;
-        default:
+    Node *currentNode;
+    int choice;
+
+    while (gameStack.top != -1) {
+        currentNode = pop(&gameStack);
+        printf("%s\n", currentNode->description);
+
+        for (int i = 0; i < 3; i++) {
+            if (currentNode->choices[i].text != NULL) {
+                printf("%d. %s\n", i + 1, currentNode->choices[i].text);
+            }
+        }
+
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        if (choice >= 1 && choice <= 3 && currentNode->choices[choice - 1].text != NULL) {
+            push(&gameStack, currentNode->choices[choice - 1].next);
+        } else {
             printf("Invalid choice. Please try again.\n");
+        }
     }
+
+    printf("The game has ended. Reflect on your journey!\n");
 }
