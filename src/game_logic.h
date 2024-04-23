@@ -19,7 +19,7 @@ typedef struct {
 } NodeStack;
 
 // Function Prototypes
-void playGame(Node *startNode);
+void playGame(Node *startNode, HogwartsStudent *player);
 void push(NodeStack *stack, Node *node);
 Node* pop(NodeStack *stack);
 Node* setupGame();
