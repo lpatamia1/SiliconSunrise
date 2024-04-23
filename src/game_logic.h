@@ -14,7 +14,22 @@ typedef struct {
     } choices[3];
 } Scene;
 
+typedef struct Node {
+    char description[1024];
+    struct Choice {
+        char text[256];
+        char outcome[256];
+        Attributes impact;
+        struct Node* next;
+    } choices[3];
+} Node;
+
+typedef struct {
+    Node* items[100];
+    int top;
+} NodeStack;
+
+void playGame(Node *startNode);
 int loadScenes(const char* filename);
-void playGame();
 
 #endif
