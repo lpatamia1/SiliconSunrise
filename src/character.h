@@ -10,7 +10,7 @@ typedef struct {
     int flying;
 } HogwartsStudent;
 
-HogwartsStudent createStudent();
+HogwartsStudent createStudent(int bravery, int intellect, int loyalty, int spellCasting, int potionMaking, int flying);
 
 void updateAttributes(HogwartsStudent *student, int bravery, int intellect, int loyalty);
 
