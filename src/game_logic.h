@@ -2,6 +2,7 @@
 #define GAME_LOGIC_H
 
 #include "character.h"
+#include <stddef.h>
 
 typedef struct Node {
     char description[1024];
@@ -19,10 +20,9 @@ typedef struct {
 } NodeStack;
 
 // Function Prototypes
-void playGame(Node *startNode, HogwartsStudent *player);
+void playGame(Node *startNode, Attributes *player);
 void push(NodeStack *stack, Node *node);
 Node* pop(NodeStack *stack);
 Node* setupGame();
-int loadScenes(const char* filename);
 
 #endif

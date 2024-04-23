@@ -8,12 +8,12 @@ typedef struct {
     int spellCasting;
     int potionMaking;
     int flying;
-} HogwartsStudent;
+} Attributes;
 
-HogwartsStudent createStudent(int bravery, int intellect, int loyalty, int spellCasting, int potionMaking, int flying);
+Attributes createStudent(int bravery, int intellect, int loyalty, int spellCasting, int potionMaking, int flying);
 
-void updateAttributes(HogwartsStudent *student, int bravery, int intellect, int loyalty);
+void updateAttributes(Attributes *student, int bravery, int intellect, int loyalty);
 
-void updateSkills(HogwartsStudent *student, int spellCasting, int potionMaking, int flying);
+void updateSkills(Attributes *student, int spellCasting, int potionMaking, int flying);
 
 #endif

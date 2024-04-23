@@ -1,5 +1,6 @@
 #include "game_logic.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void push(NodeStack *stack, Node *node) {
     if (stack->top < (sizeof(stack->items) / sizeof(Node*) - 1)) {
@@ -18,28 +19,7 @@ Node* pop(NodeStack *stack) {
     }
 }
 
-Node* setupGame() {
-    static Node startNode = {
-        "You find yourself at the entrance of a mysterious cave.",
-        {
-            {"Enter the cave", "You step into the darkness...", {0}, NULL},
-            {"Walk away", "You decide to return another day...", {0}, NULL},
-            {"", "", {0}, NULL}
-        }
-    };
-    static Node caveNode = {
-        "Inside the cave, you see two paths.",
-        {
-            {"Take the left path", "The path leads to a dead end.", {0}, NULL},
-            {"Take the right path", "You find a small chest.", {0}, NULL},
-            {"Go back", "You head back to the entrance.", {0}, &startNode}
-        }
-    };
-    startNode.choices[0].next = &caveNode;
-    return &startNode;
-}
-
-void playGame(Node *startNode) {
+void playGame(Node *startNode, Attributes *player) {
     NodeStack gameStack = {.top = -1};
     push(&gameStack, startNode);
 
@@ -68,6 +48,3 @@ void playGame(Node *startNode) {
     printf("The game has ended. Reflect on your journey!\n");
 }
 
-int loadScenes(const char* filename) {
-    return 0; 
-}
