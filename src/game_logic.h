@@ -2,15 +2,13 @@
 #define GAME_LOGIC_H
 
 #include "character.h"
-#include <stddef.h>
 
 typedef struct Node {
     char description[1024];
     struct Choice {
         char text[256];
-        char outcome[256];
-        Attributes impact;
         struct Node* next;
+        Attributes impact;
     } choices[3];
 } Node;
 
@@ -19,10 +17,9 @@ typedef struct {
     int top;
 } NodeStack;
 
-// Function Prototypes
 void playGame(Node *startNode, Attributes *player);
+Node* setupGame();
 void push(NodeStack *stack, Node *node);
 Node* pop(NodeStack *stack);
-Node* setupGame();
 
 #endif
