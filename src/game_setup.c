@@ -10,12 +10,25 @@ Node* setupGame() {
     Attributes loyaltyImpact = {0, 0, 5}; // Boost loyalty
 
     startNode = (Node){
-        "\nYou arrive at Hogwarts and board the Hogwarts Express as a new student. You have just purchased your school supplies including a personalized wand. Who will you sit next to on the train?\n",
-        {
-            {"Sit by Hermione.", &hermioneNode, intellectImpact},
-            {"Sit by Ron.", &ronNode, loyaltyImpact},
-            {"Sit by yourself and meet Neville.", &nevilleNode, braveryImpact}
-        }
+            "\nYou arrive at Hogwarts and board the Hogwarts Express as a new student. You have just purchased your school supplies including a personalized wand. Who will you sit next to on the train?\n"
+            "        ___                               ____\n"
+            "   ___  \\ /  ___         ,'\\_            | .-. \\        /|\n"
+            "   \\ /  | |,'__ \\  ,'\\_  |   \\           | | | |      ,' |_   /|\n"
+            " _ | |  | |\\/  \\ \\ |   \\ | |\\_|    __    | |_| |   _ '-. .-',' |_\n"
+            "// | |  | |____| | | |\\_|| |__    / /    |     | ,'_`. | | '-. .-',__ ,'\\_\n"
+            "\\\\_| |_,' .-, _  | | |   | |\\ \\  / /    .| |\\_/ | / \\ || |   | | / |\\  \\|   \\\n"
+            " `-. .-'| |/ / | | | |   | | \\ \\/ /     |  |    | | | || |   | | | |_\\ || |\\_|\n"
+            "   | |  | || \\_| | | |   /_\\  \\  /      | |`    | | | || |   | | | .---'| |\n"
+            "   | |  | |\\___,_\\ /_\\ _      / /       | |     | \\_/ || |   | | | |  /\\| |\n"
+            "   /_\\  | |           //____ / /       .||`      `._,' | |   | | \\ `-' /| |\n"
+            "        /_\\           `-------'         \\|              `.\\   `.\\ `._,' /_\\\n"
+            "             A N D   T H E   S O R C E R E R ' S   S T O N E\n",
+
+            {
+                    {"Sit by Hermione.", &hermioneNode, intellectImpact},
+                    {"Sit by Ron.", &ronNode, loyaltyImpact},
+                    {"Sit by yourself and meet Neville.", &nevilleNode, braveryImpact}
+            }
     };
 
     hermioneNode = (Node){
