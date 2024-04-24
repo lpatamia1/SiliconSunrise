@@ -129,7 +129,17 @@ Node* setupGame() {
     };
 
     fluffyNode = (Node){
-        "\nYou encounter Fluffy guarding a trapdoor. What will you do?\n",
+        "\nYou encounter Fluffy guarding a trapdoor. What will you do?\n"
+        "      __/ \\       |\\_____/|      / \\__\n"
+        " ____@     )     /  @   @  \\    (    @\\____\n"
+        " O         \\     |   /o\\   |    /         O\n"
+        "  \\_____)   \\     \\  \\W/  /    /   (_____/\n"
+        "    U  \\     \\____/      \\____/     /   U \n"
+        "        |                          | \n"
+        "        |                          | \n"
+        "         \\   |__    ____   ___|   / \n"
+        "          \\  |  |  |    |  |  |  / \n"
+        "          (,,,) (,,,)  (,,,)  (,,,) \n",
         {
             {"Focus on the Sorcerer's Stone.", &reasonQuirrellNode, intellectImpact},
             {"Confront Quirrell.", &confrontQuirrellNode, braveryImpact},
