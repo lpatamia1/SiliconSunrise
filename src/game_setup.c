@@ -22,7 +22,7 @@ Node* setupGame() {
             "   | |  | |\\___,_\\ /_\\ _      / /       | |     | \\_/ || |   | | | |  /\\| |\n"
             "   /_\\  | |           //____ / /       .||`      `._,' | |   | | \\ `-' /| |\n"
             "        /_\\           `-------'         \\|              `.\\   `.\\ `._,' /_\\\n"
-            "              A N D   T H E   S O R C E R E R ' S   S T O N E\n",
+            "           A N D   T H E   S O R C E R E R ' S   S T O N E\n",
 
             {
                     {"Sit by Hermione.", &hermioneNode, intellectImpact},
