@@ -95,7 +95,23 @@ Node* setupGame() {
     };
 
     saveHermioneNode = (Node){
-        "\nYou come across Hermione struggling with a troll. You can save her or find a teacher to help.\n",
+        "\nYou come across Hermione struggling with a troll. You can save her or find a teacher to help.\n"
+        "         ____ \n"
+        "   _   .'    '.   _ \n"
+        " (  \\ / =.  .= \\ /  ) \n"
+        "  \\( \\   o\\/o   / )/ \n"
+        "   \\_, '-/  \\-' ,_/ \n"
+        "     /   \\__/   \\ \n"
+        "     \\   uuuu   /\n"
+        "   ___\\  nnnn  /___\n"
+        " /`    \\      /    `\\ \n"
+        "/       '----'       \\ \n",
+        {
+                {"Help Hermione defeat the troll.", &teachersAidNode, braveryImpact},
+                {"Find a teacher to help.", &teachersAidNode, intellectImpact},
+                {"", NULL, {0, 0, 0}}
+        }
+    };
         {
             {"Help Hermione defeat the troll.", &teachersAidNode, braveryImpact},
             {"Find a teacher to help.", &teachersAidNode, intellectImpact},
