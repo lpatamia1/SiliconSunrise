@@ -131,7 +131,32 @@ Node* setupGame() {
     };
 
     confrontQuirrellNode = (Node){
-        "\nConfronting Quirrell, you discover his sinister plot to steal the Sorcerer's Stone. You must act quickly to save Hogwarts!\n",
+            "\nConfronting Quirrell, you discover his sinister plot to steal the Sorcerer's Stone. You must act quickly to save Hogwarts!\n"
+            "                    _______\n"
+            "           O     (^ '----' `)\n"
+            "                  `\\-....-/^\n"
+            "       O        o  | \-/ - |\n"
+            "                   _\\  - /_\\\\ \n"
+            "             O  /\\\\   \\/   //\\\\\\ \n"
+            "               /  \\\\  /\\  //  \\\\\\ \n"
+            "           o  o    \\\\ \\/ //    \\\\\\ \n"
+            "             /      ||   ||     \\ /\n"
+            "            /    o  \\\\   //      \\ \n"
+            "      __.--'   O     \\\\_//  .._  _\\ \n"
+            "   //|)\\      ,   (_)   /(((\\^)'\\\n"
+            "        |       | O         )  `  |\n"
+            "        |      / o___      /      /\n"
+            "       /   _.-''^^__O_^^''-._    /\n"
+            "     .'   /  -''^^    ^^''-  \\--'^//\n"
+            "   .'    .`.  `'''----'''^  ..\\    \\\n"
+            "  .'    /   `'--..____..--'^   \\    '.\n"
+            " /  _.-/                        \\     '. \n"
+            ".::'_/^|                        |  `.^\\_::.\n"
+            "    .-'|                        |    `-.\n"
+            " _.--'` \\                      /       `-.\n"
+            "/        \\                    /           `-._\n"
+            "`'---..__ `.                 .\\_.._   __       \\ \n"
+            "   ``'''`.    .'  `'^  `''---'^\n",,
         {
             {"Reason with Quirrell.", &reasonQuirrellNode, intellectImpact},
             {"Duel with Quirrell.", &houseCupNode, braveryImpact},
