@@ -59,7 +59,25 @@ Node* setupGame() {
     };
 
     duelNode = (Node){
-        "\nMalfoy's taunt during a flying lesson challenges your bravery. How you handle this could set the tone for your reputation at Hogwarts.\n",
+        "\nMalfoy's taunt during a flying lesson challenges your bravery. How you handle this could set the tone for your reputation at Hogwarts.\n"
+        "             _           _.,----,\n"
+        " __  _.-._ / '-.        -  ,._  \\)\n"
+        "|  `-)_   '-.   \\       / < _ )/\" }\n"
+        "/__    '-.   \\   '-, ___(c-(6)=(6)\n"
+        " , `'.    `._ '.  _,'   >\\    \"  )\n"
+        " :;;,,'-._   '---' (  ( \"/`. -='/\n"
+        ";:;;:;;,  '..__    ,`-.`)'- '--'\n"
+        ";';:;;;;;'-._ /'._|   Y/   _/' \\\n"
+        "      '''\"._ F    |  _/ _.'._   `\\\n"
+        "             L    \\   \\/     '._  \\\n"
+        "      .-,-,_ |     `.  `'---,  \\_ _|\n"
+        "      //    'L    /  \\,   (\"--',=`)7\n"
+        "     | `._       : _,  \\  /'`-._L,_'-._\n"
+        "     '--' '-.\\__/ _L   .`'         './/\n"
+        "                 [ (  /\n"
+        "                  ) `{\n"
+        "                  \\__)\n",
+
         {
             {"Confront Malfoy.", &confrontQuirrellNode, braveryImpact},
             {"Ignore and focus on flying.", &flyingNode, {0, 3, 0}},
