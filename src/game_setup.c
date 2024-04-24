@@ -11,7 +11,7 @@ Node* setupGame() {
 
     startNode = (Node){
             "\nYou arrive at Hogwarts and board the Hogwarts Express as a new student. You have just purchased your school supplies including a personalized wand. Who will you sit next to on the train?\n"
-            "        ___                            poo   ____\n"
+            "        ___                               ____\n"
             "   ___  \\ /  ___         ,'\\_            | .-. \\        /|\n"
             "   \\ /  | |,'__ \\  ,'\\_  |   \\           | | | |      ,' |_   /|\n"
             " _ | |  | |\\/  \\ \\ |   \\ | |\\_|    __    | |_| |   _ '-. .-',' |_\n"
